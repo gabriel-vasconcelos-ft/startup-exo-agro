@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styles from "./style";
 import {
   Text,
   View,
@@ -6,16 +7,14 @@ import {
   TextInput,
   TouchableOpacity,
 } from "react-native";
-import styles from "./style";
 import Header from "../../components/Header";
-import TabBar from "../../components/TabBar";
 import { CheckBox } from "react-native-elements";
 
 export default function AgendarVisita() {
   const [isChecked, setIsChecked] = useState(false);
 
   return (
-    <View style={styles.container}>
+    <View>
       <Header />
       <ScrollView contentContainerStyle={styles.scrollViewContent}>
         <View style={styles.signSchedule}>
@@ -60,8 +59,6 @@ export default function AgendarVisita() {
           </TouchableOpacity>
         </View>
       </ScrollView>
-
-      <TabBar />
     </View>
   );
 }

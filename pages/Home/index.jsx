@@ -1,8 +1,8 @@
-import { Text, View, Image, TouchableOpacity } from "react-native";
+import React from "react";
 import styles from "./style";
-import TabBar from "../../components/TabBar";
-import QuickAccess from "../../components/QuickAccess";
+import { Text, View } from "react-native";
 import Header from "../../components/Header";
+import QuickAccess from "../../components/QuickAccess";
 
 export default function Home() {
   return (
@@ -10,7 +10,6 @@ export default function Home() {
       <Header />
       <Text style={styles.quickAccess}>Acesso rápido</Text>
       <QuickAccess />
-      <TabBar />
     </View>
   );
 }

@@ -1,13 +1,22 @@
-import { Text, View, ScrollView, TextInput, TouchableOpacity } from "react-native";
+import React from "react";
 import styles from "./style";
+import {
+  Text,
+  View,
+  ScrollView,
+  TextInput,
+  TouchableOpacity,
+} from "react-native";
 import Header from "../../components/Header";
-import TabBar from "../../components/TabBar";
 
 export default function CadastroCliente() {
   return (
-    <View style={styles.container}>
+    <View>
       <Header />
-      <ScrollView contentContainerStyle={styles.scrollViewContent}>
+      <ScrollView
+        contentContainerStyle={styles.scrollViewContent}
+        keyboardShouldPersistTaps="handled"
+      >
         <View style={styles.signUpClient}>
           <Text style={styles.textSignUpClient}>Cadastro de Cliente</Text>
         </View>
@@ -48,8 +57,6 @@ export default function CadastroCliente() {
           </TouchableOpacity>
         </View>
       </ScrollView>
-
-      <TabBar />
     </View>
   );
 }

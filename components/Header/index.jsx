@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View, Image } from "react-native";
 import styles from "./style";
 
-export default function Header2() {
+export default function Header() {
   return (
     <View style={styles.header}>
       <View>

@@ -1,112 +1,43 @@
-import React, { useState } from "react";
-import { Text, View, TouchableOpacity } from "react-native";
+import React from "react";
 import styles from "./style";
+import { Text, View, TouchableOpacity } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 import { AntDesign } from "@expo/vector-icons";
 
 export default function QuickAccess() {
-  const [activeButton, setActiveButton] = useState(null);
+  const buttonsData = [
+    { name: "Visita", icon: "solution1", text: "Agendar Visita" },
+    { name: "Historico", icon: "clockcircleo", text: "Histórico de Visitas" },
+    { name: "Cadastro", icon: "addusergroup", text: "Cadastro de Clientes" },
+    { name: "Agenda", icon: "profile", text: "Minha Agenda" },
+  ];
+
+  const navigation = useNavigation();
 
   const handleButtonPress = (buttonName) => {
-    setActiveButton(buttonName);
-
-    setTimeout(() => {
-      setActiveButton(null);
-    }, 150);
+    if (buttonName === "Visita") {
+      navigation.navigate("AgendarVisita");
+    }
+    if (buttonName === "Historico") {
+      navigation.navigate("HistoricoVisita");
+    }
+    if (buttonName === "Cadastro") {
+      navigation.navigate("CadastroCliente");
+    }
   };
+
   return (
-    <View style={styles.flexButtons}>
-      <TouchableOpacity
-        style={[
-          styles.button,
-          activeButton === "Visita" && { backgroundColor: "#5FBF3E" },
-        ]}
-        onPress={() => handleButtonPress("Visita")}
-      >
-        <AntDesign
-          name="solution1"
-          style={[
-            styles.buttonIcon,
-            activeButton === "Visita" && { color: "#fff" },
-          ]}
-        />
-        <Text
-          style={[
-            styles.buttonText,
-            activeButton === "Visita" && { color: "#fff" },
-          ]}
+    <View style={styles.containerButtons}>
+      {buttonsData.map((button) => (
+        <TouchableOpacity
+          key={button.name}
+          style={styles.button}
+          onPress={() => handleButtonPress(button.name)}
         >
-          Agendar Visita
-        </Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        style={[
-          styles.button,
-          activeButton === "Historico" && { backgroundColor: "#5FBF3E" },
-        ]}
-        onPress={() => handleButtonPress("Historico")}
-      >
-        <AntDesign
-          name="clockcircleo"
-          style={[
-            styles.buttonIcon,
-            activeButton === "Historico" && { color: "#fff" },
-          ]}
-        />
-        <Text
-          style={[
-            styles.buttonText,
-            activeButton === "Historico" && { color: "#fff" },
-          ]}
-        >
-          Histórico de Visitas
-        </Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        style={[
-          styles.button,
-          activeButton === "Cadastro" && { backgroundColor: "#5FBF3E" },
-        ]}
-        onPress={() => handleButtonPress("Cadastro")}
-      >
-        <AntDesign
-          name="addusergroup"
-          style={[
-            styles.buttonIcon,
-            activeButton === "Cadastro" && { color: "#fff" },
-          ]}
-        />
-        <Text
-          style={[
-            styles.buttonText,
-            activeButton === "Cadastro" && { color: "#fff" },
-          ]}
-        >
-          Cadastro de Clientes
-        </Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        style={[
-          styles.button,
-          activeButton === "Agenda" && { backgroundColor: "#5FBF3E" },
-        ]}
-        onPress={() => handleButtonPress("Agenda")}
-      >
-        <AntDesign
-          name="profile"
-          style={[
-            styles.buttonIcon,
-            activeButton === "Agenda" && { color: "#fff" },
-          ]}
-        />
-        <Text
-          style={[
-            styles.buttonText,
-            activeButton === "Agenda" && { color: "#fff" },
-          ]}
-        >
-          Minha Agenda
-        </Text>
-      </TouchableOpacity>
+          <AntDesign name={button.icon} style={styles.buttonIcon} />
+          <Text style={styles.buttonText}>{button.text}</Text>
+        </TouchableOpacity>
+      ))}
     </View>
   );
 }

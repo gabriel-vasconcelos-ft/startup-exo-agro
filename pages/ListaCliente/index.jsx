@@ -1,6 +1,6 @@
-import { Text, View, Image, TextInput } from "react-native";
+import React from "react";
 import styles from "./style";
-import TabBar from "../../components/TabBar";
+import { Text, View, TextInput } from "react-native";
 import Header2 from "../../components/Header2";
 import ButtonList from "../../components/ButtonList";
 
@@ -15,8 +15,6 @@ export default function ListaCliente() {
         <Text style={styles.list}>Lista de clientes</Text>
       </View>
       <ButtonList />
-
-      <TabBar />
     </View>
   );
 }

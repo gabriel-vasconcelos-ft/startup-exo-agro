@@ -1,6 +1,5 @@
 import { Text, View, Image, TouchableOpacity } from "react-native";
 import styles from "./style";
-import TabBar from "../../components/TabBar";
 import { AntDesign } from "@expo/vector-icons";
 import { FontAwesome } from '@expo/vector-icons'; 
 
@@ -54,7 +53,6 @@ export default function PerfilCliente() {
           </View>
         </TouchableOpacity>
       </View>
-      <TabBar />
     </View>
   );
 }

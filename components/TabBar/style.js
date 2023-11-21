@@ -2,14 +2,14 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "#f5f5f5",
-    width: "100%",
-    height: "100%",
+    // flex: 1,
+    // //backgroundColor: "#f5f5f5",
+    // width: "100%",
+    // height: 1,
   },
 
   navbar: {
-    backgroundColor: "#fff",
+    //backgroundColor: "#fff",
     marginTop: "auto",
     flexDirection: "row",
     justifyContent: "space-around",
@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
     elevation: 2,
     position: "sticky",
     bottom: 0,
+    
   },
 
   navbarButton: {

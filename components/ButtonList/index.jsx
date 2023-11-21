@@ -1,5 +1,6 @@
-import { Text, View, TouchableOpacity } from "react-native";
+import React from "react";
 import styles from "./style";
+import { Text, View, TouchableOpacity } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 
 export default function ButtonList() {

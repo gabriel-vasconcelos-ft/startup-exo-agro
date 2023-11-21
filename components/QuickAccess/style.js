@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  flexButtons: {
+  containerButtons: {
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "space-around",
@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     margin: 5,
     borderRadius: 8,
     width: "46%",
-    height: 102,
+    height: 108,
     justifyContent: "space-around",
     shadowOpacity: 0.2,
     shadowRadius: 5,

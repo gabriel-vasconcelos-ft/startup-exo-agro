@@ -1,10 +1,10 @@
-import { Text, View, Image, TouchableOpacity } from "react-native";
+import React from "react";
 import styles from "./style";
-import TabBar from "../../components/TabBar";
+import { Text, View, Image, TouchableOpacity } from "react-native";
 
 export default function HistoricoCliente() {
   return (
-    <View style={styles.container}>
+    <View>
       <View style={styles.header}>
         <View>
           <View style={styles.imageContainer}>
@@ -51,7 +51,6 @@ export default function HistoricoCliente() {
           </View>
         </TouchableOpacity>
       </View>
-      <TabBar />
     </View>
   );
 }
