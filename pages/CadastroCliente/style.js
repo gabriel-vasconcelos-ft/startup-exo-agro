@@ -23,6 +23,14 @@ const styles = StyleSheet.create({
     marginTop: 0,
   },
 
+  dropdown: {
+    fontSize: 16,
+    margin: 20,
+    backgroundColor: "#fff",
+    borderRadius: 8,
+    marginTop: 0,
+  },
+
   flexButtons: {
     flexDirection: "row",
     flexWrap: "wrap",

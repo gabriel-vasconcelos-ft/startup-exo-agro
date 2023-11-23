@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./style";
 import {
   Text,
@@ -8,8 +8,21 @@ import {
   TouchableOpacity,
 } from "react-native";
 import Header from "../../components/Header";
+import RNPickerSelect from 'react-native-picker-select';
+
 
 export default function CadastroCliente() {
+
+  const [dropdown, setDropdown] = useState("");
+
+  const options = [
+    { label: 'Maculino', value: 'masculino' },
+    { label: 'Feminino', value: 'feminino' },
+    { label: 'Não-binário', value: 'naobinario' },
+    { label: 'Outro', value: 'outro' },
+  ]
+
+
   return (
     <View>
       <Header />
@@ -22,14 +35,16 @@ export default function CadastroCliente() {
         </View>
         <View>
           <TextInput style={styles.input} placeholder="Nome Completo" />
-          <TextInput style={styles.input} placeholder="Data de nascimento" />
-          <TextInput style={styles.input} placeholder="Gênero" />
-          <TextInput style={styles.input} placeholder="E-mail" />
-          <TextInput style={styles.input} placeholder="Telefone" />
+          <TextInput style={styles.input} placeholder="Data de nascimento" keyboardType="numeric" />
+          <View style={styles.dropdown}>
+            <RNPickerSelect placeholder={{ label: "Gênero", value: null }} items={options} onValueChange={(value) => setDropdown(value)} value={dropdown} />
+          </View>
+          <TextInput style={styles.input} placeholder="E-mail" keyboardType="email-address" />
+          <TextInput style={styles.input} placeholder="Telefone" keyboardType="phone-pad" />
           <TextInput style={styles.input} placeholder="Endereço" />
           <TextInput
             style={styles.input}
-            placeholder="Tamanho da propriedade"
+            placeholder="Tamanho da propriedade em m²" keyboardType="numeric"
           />
           <TextInput
             style={styles.input}
@@ -46,7 +61,6 @@ export default function CadastroCliente() {
             style={styles.input}
             placeholder="Preferência de notificação"
           />
-          <TextInput style={styles.input} placeholder="Senha" />
         </View>
         <View style={styles.flexButtons}>
           <TouchableOpacity style={[styles.button, styles.buttonColorCancel]}>
@@ -60,3 +74,5 @@ export default function CadastroCliente() {
     </View>
   );
 }
+
+
