@@ -6,7 +6,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#f5f5f5",
     width: "100%",
     height: "100%",
-
   },
 
   input: {
@@ -22,11 +21,12 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: "bold",
     marginTop: 25,
+    marginBottom: 5,
     color: "#696969",
   },
 
-  listContainer:{
-   alignItems: "center",
+  listContainer: {
+    alignItems: "center",
   },
 });
 

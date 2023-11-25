@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginLeft: 21,
     marginRight: 21,
-    marginTop: 20,
+    marginTop: 10,
   },
 
   buttonText: {

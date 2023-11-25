@@ -1,12 +1,11 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-
-  signUpClient: {
+  signSchedule: {
     alignItems: "center",
   },
 
-  textSignUpClient: {
+  textSchedule: {
     fontSize: 18,
     fontWeight: "bold",
     marginTop: 40,
@@ -18,14 +17,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     margin: 20,
     padding: 13,
-    backgroundColor: "#fff",
-    borderRadius: 8,
-    marginTop: 0,
-  },
-
-  dropdown: {
-    fontSize: 16,
-    margin: 20,
     backgroundColor: "#fff",
     borderRadius: 8,
     marginTop: 0,
@@ -57,12 +48,30 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
 
+  inputObeservation: {
+    height: 150,
+    textAlignVertical: "top",
+  },
+
   buttonColorSave: {
     backgroundColor: "#5FBF3E",
   },
 
   buttonColorCancel: {
     backgroundColor: "#BE1002",
+  },
+
+  checkboxContainer: {
+    backgroundColor: "transparent",
+    borderWidth: 0,
+    padding: 0,
+    marginLeft: 20,
+  },
+
+  checkboxText: {
+    fontSize: 16,
+    color: "#696969",
+    fontWeight: "normal",
   },
 });
 

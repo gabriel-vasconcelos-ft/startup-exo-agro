@@ -8,20 +8,16 @@ import {
   TouchableOpacity,
 } from "react-native";
 import Header from "../../components/Header";
-import RNPickerSelect from 'react-native-picker-select';
-
+import RNPickerSelect from "react-native-picker-select";
 
 export default function CadastroCliente() {
-
   const [dropdown, setDropdown] = useState("");
 
   const options = [
-    { label: 'Maculino', value: 'masculino' },
-    { label: 'Feminino', value: 'feminino' },
-    { label: 'Não-binário', value: 'naobinario' },
-    { label: 'Outro', value: 'outro' },
-  ]
-
+    { label: "Maculino", value: "masculino" },
+    { label: "Feminino", value: "feminino" },
+    { label: "Outro", value: "outro" },
+  ];
 
   return (
     <View>
@@ -35,16 +31,34 @@ export default function CadastroCliente() {
         </View>
         <View>
           <TextInput style={styles.input} placeholder="Nome Completo" />
-          <TextInput style={styles.input} placeholder="Data de nascimento" keyboardType="numeric" />
+          <TextInput
+            style={styles.input}
+            placeholder="Data de nascimento"
+            keyboardType="numeric"
+          />
           <View style={styles.dropdown}>
-            <RNPickerSelect placeholder={{ label: "Gênero", value: null }} items={options} onValueChange={(value) => setDropdown(value)} value={dropdown} />
+            <RNPickerSelect
+              placeholder={{ label: "Gênero", value: null }}
+              items={options}
+              onValueChange={(value) => setDropdown(value)}
+              value={dropdown}
+            />
           </View>
-          <TextInput style={styles.input} placeholder="E-mail" keyboardType="email-address" />
-          <TextInput style={styles.input} placeholder="Telefone" keyboardType="phone-pad" />
+          <TextInput
+            style={styles.input}
+            placeholder="E-mail"
+            keyboardType="email-address"
+          />
+          <TextInput
+            style={styles.input}
+            placeholder="Telefone"
+            keyboardType="phone-pad"
+          />
           <TextInput style={styles.input} placeholder="Endereço" />
           <TextInput
             style={styles.input}
-            placeholder="Tamanho da propriedade em m²" keyboardType="numeric"
+            placeholder="Tamanho da propriedade em m²"
+            keyboardType="numeric"
           />
           <TextInput
             style={styles.input}
@@ -74,5 +88,3 @@ export default function CadastroCliente() {
     </View>
   );
 }
-
-

@@ -1,8 +1,7 @@
 import { Text, View, Image, TouchableOpacity } from "react-native";
 import styles from "./style";
 import { AntDesign } from "@expo/vector-icons";
-import { FontAwesome } from '@expo/vector-icons'; 
-
+import { FontAwesome } from "@expo/vector-icons";
 
 export default function PerfilCliente() {
   return (

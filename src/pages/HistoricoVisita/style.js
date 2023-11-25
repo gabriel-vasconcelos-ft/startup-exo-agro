@@ -24,8 +24,8 @@ const styles = StyleSheet.create({
     color: "#696969",
   },
 
-  listContainer:{
-   alignItems: "center",
+  listContainer: {
+    alignItems: "center",
   },
 });
 

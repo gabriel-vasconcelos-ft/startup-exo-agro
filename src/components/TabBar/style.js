@@ -21,7 +21,6 @@ const styles = StyleSheet.create({
     elevation: 2,
     position: "sticky",
     bottom: 0,
-    
   },
 
   navbarButton: {

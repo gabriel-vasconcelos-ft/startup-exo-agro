@@ -1,7 +1,6 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-
   header: {
     flex: 1,
     flexDirection: "row",
@@ -69,7 +68,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginLeft: 21,
   },
-  
+
   buttonContainer: {
     flexDirection: "row",
     alignItems: "center",
