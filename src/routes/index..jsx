@@ -3,17 +3,17 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { StatusBar } from "expo-status-bar";
 
-import Login from "../pages/Login";
-import TabBar from "../components/TabBar";
-import Home from "../pages/Home";
-import Perfil from "../pages/Perfil";
+import {
+  Login,
+  Home,
+  ListaCliente,
+  Perfil,
+  AgendarVisita,
+  HistoricoVisita,
+  CadastroCliente,
+} from "../pages";
 
-import AgendarVisita from "../pages/AgendarVisita";
-import HistoricoVisita from "../pages/HistoricoVisita";
-import CadastroCliente from "../pages/CadastroCliente";
-import ListaCliente from '../pages/ListaCliente';
-// import PerfilCliente from "../pages/PerfilCliente";
-// import HistoricoCliente from "../pages/HistoricoCliente";
+import { TabBar } from '../components';
 
 export default function Routes() {
   const Stack = createStackNavigator();
