@@ -16,15 +16,12 @@ const styles = StyleSheet.create({
   },
 
   image: {
-    width: 90,
-    height: 90,
     borderRadius: 45,
     marginTop: 25,
     marginLeft: 10,
   },
 
   name: {
-    fontSize: 21,
     fontWeight: "bold",
     color: "#fff",
     marginBottom: 4,

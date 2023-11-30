@@ -11,9 +11,11 @@ import {
   AgendarVisita,
   HistoricoVisita,
   CadastroCliente,
+  PoliticaPrivacidade,
+  Sobre,
 } from "../pages";
 
-import { TabBar } from '../components';
+import { TabBar } from "../components";
 
 export default function Routes() {
   const Stack = createStackNavigator();
@@ -34,7 +36,11 @@ export default function Routes() {
         <Stack.Screen name="AgendarVisita" component={AgendarVisita} />
         <Stack.Screen name="HistoricoVisita" component={HistoricoVisita} />
         <Stack.Screen name="CadastroCliente" component={CadastroCliente} />
-        <Stack.Screen name="#" component={""} />
+        <Stack.Screen
+          name="PoliticaPrivacidade"
+          component={PoliticaPrivacidade}
+        />
+        <Stack.Screen name="Sobre" component={Sobre} />
       </Stack.Navigator>
       <StatusBar style="auto" />
       <TabBar />
