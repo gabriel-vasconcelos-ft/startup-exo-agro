@@ -9,9 +9,17 @@ import {
 } from "react-native";
 import Header from "../../components/Header";
 import { CheckBox } from "react-native-elements";
+import { useNavigation } from "@react-navigation/native";
+
 
 export default function AgendarVisita() {
   const [isChecked, setIsChecked] = useState(false);
+  const navigation = useNavigation();
+
+  const navigateToScreen = (screenName) => {
+    navigation.navigate(screenName);
+  };
+
 
   return (
     <View>
@@ -51,7 +59,8 @@ export default function AgendarVisita() {
         </View>
 
         <View style={styles.flexButtons}>
-          <TouchableOpacity style={[styles.button, styles.buttonColorCancel]}>
+          <TouchableOpacity style={[styles.button, styles.buttonColorCancel]} onPress={() => navigateToScreen("Home")}
+          >
             <Text style={styles.buttonText}>Cancelar </Text>
           </TouchableOpacity>
           <TouchableOpacity style={[styles.button, styles.buttonColorSave]}>

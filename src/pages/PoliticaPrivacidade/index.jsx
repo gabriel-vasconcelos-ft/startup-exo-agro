@@ -3,9 +3,16 @@ import styles from "./style";
 import { Text, View, ScrollView, TouchableOpacity } from "react-native";
 import Header2 from "../../components/Header2";
 import { CheckBox } from "react-native-elements";
+import { useNavigation } from "@react-navigation/core";
 
 export default function PoliticaPrivacidade() {
   const [isChecked, setIsChecked] = useState(false);
+
+  const navigation = useNavigation();
+
+  const navigateToScreen = (screenName) => {
+    navigation.navigate(screenName);
+  };
 
   return (
     <View style={styles.container}>
@@ -190,7 +197,7 @@ export default function PoliticaPrivacidade() {
           />
 
           <View style={styles.flexButtons}>
-            <TouchableOpacity style={[styles.button, styles.buttonColorCancel]}>
+            <TouchableOpacity style={[styles.button, styles.buttonColorCancel]} onPress={() => navigateToScreen("Home")}>
               <Text style={styles.buttonText}>Cancelar </Text>
             </TouchableOpacity>
             <TouchableOpacity style={[styles.button, styles.buttonColorSave]}>

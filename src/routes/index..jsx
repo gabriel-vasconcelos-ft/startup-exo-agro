@@ -43,7 +43,7 @@ export default function Routes() {
         <Stack.Screen name="Sobre" component={Sobre} />
       </Stack.Navigator>
       <StatusBar style="auto" />
-      <TabBar />
+      <TabBar/>
     </NavigationContainer>
   );
 }
