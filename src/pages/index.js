@@ -5,6 +5,8 @@ import ListaCliente from "./ListaCliente";
 import AgendarVisita from "./AgendarVisita";
 import CadastroCliente from "./CadastroCliente";
 import HistoricoVisita from "./HistoricoVisita";
+import PoliticaPrivacidade from "./PoliticaPrivacidade";
+import Sobre from "./Sobre";
 
 export {
   Home,
@@ -14,4 +16,6 @@ export {
   AgendarVisita,
   CadastroCliente,
   HistoricoVisita,
+  PoliticaPrivacidade,
+  Sobre,
 };

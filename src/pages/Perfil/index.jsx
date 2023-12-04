@@ -1,8 +1,19 @@
-import { Text, View, Image, TouchableOpacity } from "react-native";
+import { Text, View, Image, TouchableOpacity, Linking } from "react-native";
 import styles from "./style";
 import { AntDesign } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 export default function Perfil() {
+  const navigation = useNavigation();
+
+  const navigateToScreen = (screenName) => {
+    navigation.navigate(screenName);
+  };
+
+  const handleEmailPress = () => {
+    Linking.openURL("mailto:suporte@exoagro.com.br");
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -26,25 +37,28 @@ export default function Perfil() {
             <AntDesign name="user" style={styles.buttonIcon} />
           </View>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
-          <View style={styles.buttonContainer}>
-            <Text style={styles.buttonText}>Redes sociais </Text>
-            <AntDesign name="linkedin-square" style={styles.buttonIcon} />
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => navigateToScreen("PoliticaPrivacidade")}
+        >
           <View style={styles.buttonContainer}>
             <Text style={styles.buttonText}>Política de privacidade </Text>
             <AntDesign name="filetext1" style={styles.buttonIcon} />
           </View>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={handleEmailPress}
+        >
           <View style={styles.buttonContainer}>
             <Text style={styles.buttonText}>Central de ajuda e suporte </Text>
             <AntDesign name="customerservice" style={styles.buttonIcon} />
           </View>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => navigateToScreen("Sobre")}
+        >
           <View style={styles.buttonContainer}>
             <Text style={styles.buttonText}>Sobre </Text>
             <AntDesign name="infocirlceo" style={styles.buttonIcon} />

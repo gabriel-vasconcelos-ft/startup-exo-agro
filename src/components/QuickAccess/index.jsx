@@ -8,7 +8,7 @@ export default function QuickAccess() {
   const buttonsData = [
     { name: "Visita", icon: "solution1", text: "Agendar Visita" },
     { name: "Historico", icon: "clockcircleo", text: "Histórico de Visitas" },
-    { name: "Cadastro", icon: "addusergroup", text: "Cadastro de Clientes" },
+    { name: "Lista", icon: "contacts", text: "Lista de Clientes" },
     { name: "Agenda", icon: "profile", text: "Minha Agenda" },
   ];
 
@@ -21,8 +21,8 @@ export default function QuickAccess() {
     if (buttonName === "Historico") {
       navigation.navigate("HistoricoVisita");
     }
-    if (buttonName === "Cadastro") {
-      navigation.navigate("CadastroCliente");
+    if (buttonName === "Lista") {
+      navigation.navigate("ListaCliente");
     }
   };
 
