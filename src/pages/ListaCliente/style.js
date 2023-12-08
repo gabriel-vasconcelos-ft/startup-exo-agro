@@ -28,6 +28,22 @@ const styles = StyleSheet.create({
   listContainer: {
     alignItems: "center",
   },
+
+  buttonAdd:{
+      backgroundColor: "#5FBF3E",
+      borderRadius: 8,
+      width: 40,
+      height: 40,
+      justifyContent: "center",
+      alignItems: "center",
+      marginTop: 10,
+      marginLeft: "75%",
+  },
+
+  buttonIcon: {
+    fontSize: 27,
+    color: "#fff",
+  },
 });
 
 export default styles;

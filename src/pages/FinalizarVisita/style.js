@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     marginLeft: 20,
     marginRight: 20,
-    marginTop: 150,
+    marginTop: 70,
     marginBottom: 95,
   },
 
@@ -47,13 +47,31 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontWeight: "bold",
   },
-  
+
+  inputObeservation: {
+    height: 150,
+    textAlignVertical: "top",
+  },
+
   buttonColorSave: {
     backgroundColor: "#5FBF3E",
   },
 
   buttonColorCancel: {
     backgroundColor: "#BE1002",
+  },
+
+  checkboxContainer: {
+    backgroundColor: "transparent",
+    borderWidth: 0,
+    padding: 0,
+    marginLeft: 20,
+  },
+
+  checkboxText: {
+    fontSize: 16,
+    color: "#696969",
+    fontWeight: "normal",
   },
 });
 

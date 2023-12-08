@@ -197,7 +197,7 @@ export default function PoliticaPrivacidade() {
           />
 
           <View style={styles.flexButtons}>
-            <TouchableOpacity style={[styles.button, styles.buttonColorCancel]} onPress={() => navigateToScreen("Home")}>
+            <TouchableOpacity style={[styles.button, styles.buttonColorCancel]} onPress={() => navigateToScreen("Perfil")}>
               <Text style={styles.buttonText}>Cancelar </Text>
             </TouchableOpacity>
             <TouchableOpacity style={[styles.button, styles.buttonColorSave]}>

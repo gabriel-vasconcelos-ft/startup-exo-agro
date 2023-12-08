@@ -7,6 +7,8 @@ import CadastroCliente from "./CadastroCliente";
 import HistoricoVisita from "./HistoricoVisita";
 import PoliticaPrivacidade from "./PoliticaPrivacidade";
 import Sobre from "./Sobre";
+import FinalizarVisita from "./FinalizarVisita";
+
 
 export {
   Home,
@@ -18,4 +20,5 @@ export {
   HistoricoVisita,
   PoliticaPrivacidade,
   Sobre,
+  FinalizarVisita,
 };

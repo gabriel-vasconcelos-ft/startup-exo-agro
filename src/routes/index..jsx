@@ -13,6 +13,7 @@ import {
   CadastroCliente,
   PoliticaPrivacidade,
   Sobre,
+  FinalizarVisita,
 } from "../pages";
 
 import { TabBar } from "../components";
@@ -34,6 +35,7 @@ export default function Routes() {
         <Stack.Screen name="Perfil" component={Perfil} />
 
         <Stack.Screen name="AgendarVisita" component={AgendarVisita} />
+        <Stack.Screen name="FinalizarVisita" component={FinalizarVisita}/>
         <Stack.Screen name="HistoricoVisita" component={HistoricoVisita} />
         <Stack.Screen name="CadastroCliente" component={CadastroCliente} />
         <Stack.Screen
@@ -43,7 +45,7 @@ export default function Routes() {
         <Stack.Screen name="Sobre" component={Sobre} />
       </Stack.Navigator>
       <StatusBar style="auto" />
-      <TabBar/>
+      <TabBar />
     </NavigationContainer>
   );
 }

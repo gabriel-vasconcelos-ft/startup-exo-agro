@@ -43,16 +43,13 @@ export default function Perfil() {
         >
           <View style={styles.buttonContainer}>
             <Text style={styles.buttonText}>Política de privacidade </Text>
-            <AntDesign name="filetext1" style={styles.buttonIcon} />
+            <AntDesign name="copy1" style={styles.buttonIcon} />
           </View>
         </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={handleEmailPress}
-        >
+        <TouchableOpacity style={styles.button} onPress={handleEmailPress}>
           <View style={styles.buttonContainer}>
             <Text style={styles.buttonText}>Central de ajuda e suporte </Text>
-            <AntDesign name="customerservice" style={styles.buttonIcon} />
+            <AntDesign name="message1" style={styles.buttonIcon} />
           </View>
         </TouchableOpacity>
         <TouchableOpacity
@@ -62,6 +59,14 @@ export default function Perfil() {
           <View style={styles.buttonContainer}>
             <Text style={styles.buttonText}>Sobre </Text>
             <AntDesign name="infocirlceo" style={styles.buttonIcon} />
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.button}
+        >
+          <View style={styles.buttonContainer}>
+            <Text style={styles.buttonText}>Sair </Text>
+            <AntDesign name="logout" style={styles.buttonIcon} />
           </View>
         </TouchableOpacity>
       </View>
