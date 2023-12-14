@@ -2,20 +2,21 @@ import React, { useState, useEffect } from "react";
 import { Text, View, TouchableOpacity, FlatList } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 
-import axios from "axios";
+import { todosClientes } from "../../service/ClienteService";
 
 import styles from "./style";
 
 export default function ButtonList() {
-  const baseApi = "http://10.0.0.105:8080";
 
   const [clientes, setClientes] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(`${baseApi}/clientes`)
-      .then((response) => setClientes(response.data.clientes))
-      .catch((error) => console.error("Erro ao realizar requisição: ", error));
+    const carregarClientes = async () => {
+      const response = await todosClientes();
+      setClientes(response.clientes);
+    };
+
+    carregarClientes();
   }, []);
 
   return (
