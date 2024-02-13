@@ -8,6 +8,7 @@ import HistoricoVisita from "./HistoricoVisita";
 import PoliticaPrivacidade from "./PoliticaPrivacidade";
 import Sobre from "./Sobre";
 import FinalizarVisita from "./FinalizarVisita";
+import MinhaAgenda from './MinhaAgenda';
 
 
 export {
@@ -21,4 +22,5 @@ export {
   PoliticaPrivacidade,
   Sobre,
   FinalizarVisita,
+  MinhaAgenda
 };
