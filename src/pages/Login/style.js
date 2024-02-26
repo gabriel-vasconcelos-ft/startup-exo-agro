@@ -24,14 +24,10 @@ const styles = StyleSheet.create({
   },
 
   image: {
-    width: 190,
-    height: 160,
-    borderRadius: 45,
     marginTop: 10,
   },
 
   titulo: {
-    fontSize: 33,
     fontWeight: "bold",
     color: "#fff",
     marginBottom: 4,

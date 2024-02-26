@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
 		marginLeft: 20,
 		marginRight: 20,
 		marginTop: 70,
-		marginBottom: 95,
+		marginBottom: 50,
 	},
 
 	button: {
@@ -97,6 +97,13 @@ const styles = StyleSheet.create({
 		marginTop: 20,
 		textAlign: "center",
 	},
+
+	label: {
+		fontSize: 15,
+		marginBottom: 5,
+		marginLeft: 20,
+		color: "#646464",
+	  },
 });
 
 export default styles;

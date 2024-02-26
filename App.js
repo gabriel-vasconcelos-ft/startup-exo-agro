@@ -4,6 +4,7 @@ import { StyleSheet, View } from "react-native";
 import Routes from "./src/routes/index.";
 
 export default function App() {
+
   return (
     <View style={styles.container}>
       <Routes />
