@@ -63,9 +63,10 @@ export default function Perfil() {
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
+          onPress={() => navigateToScreen("Login")}
         >
           <View style={styles.buttonContainer}>
-            <Text style={styles.buttonText}>Sair </Text>
+            <Text style={styles.buttonText}>Sair</Text>
             <AntDesign name="logout" style={styles.buttonIcon} />
           </View>
         </TouchableOpacity>
