@@ -50,6 +50,15 @@ const styles = StyleSheet.create({
 		marginLeft: 21,
 		marginRight: 21,
 	},
+
+	input2: {
+		fontSize: 16,
+		margin: 20,
+		padding: 13,
+		backgroundColor: "#fff",
+		borderRadius: 30,
+		marginTop: 50,
+	  },
 });
 
 export default styles;

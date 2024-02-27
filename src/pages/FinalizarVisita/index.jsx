@@ -90,7 +90,6 @@ export default function FinalizarVisita() {
   return (
     <View style={styles.container}>
       <Header />
-
       <ScrollView contentContainerStyle={styles.scrollViewContent}>
         <View style={styles.signSchedule}>
           <Text style={styles.textSchedule}>Realizar Visita</Text>

@@ -9,42 +9,42 @@ import {
 } from "react-native";
 import { Picker } from "@react-native-picker/picker";
 import { useNavigation } from "@react-navigation/core";
+import * as Print from "expo-print";
 
 import styles from "./style";
 
-import * as Print from "expo-print";
-
-const htmlTemplate = (name, email) => {
-  return `
-  <html>
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
-    </head>
-    <style>
-      h1 {
-        color: lim
-      }
-    </style>
-    <body style="text-align: center;">
-      <h1 style="font-size: 50px; font-family: Helvetica Neue; font-weight: normal;">
-        ${name}
-      </h1>
-      <h2>${email}</h2>
-      <img
-        src="https://d30j33t1r58ioz.cloudfront.net/static/guides/sdk.png"
-        style="width: 90vw;" />
-    </body>
-  </html>
-  `;
-};
+import htmlTemplate from "./htmlTemplate";
 
 export default function PDF() {
   const navigation = useNavigation();
 
   const print = async () => {
-    // On android prints the given html. On web prints the HTML from the current page.
     await Print.printAsync({
-      html: htmlTemplate(name, email),
+      html: htmlTemplate(
+        name,
+        phone,
+        email,
+        gender,
+        cpf,
+        birth,
+        road,
+        neighborhood,
+        city,
+        area,
+        cultivation,
+        problem,
+        notification,
+        goal,
+        diagnosis,
+        pest,
+        product,
+        observations,
+        planting,
+        status,
+        date,
+        arrival,
+        exit
+      ),
     });
   };
 
@@ -103,6 +103,7 @@ export default function PDF() {
               style={styles.input}
               value={name}
               onChangeText={(text) => setName(text)}
+              editable={false}
             />
           </View>
 
@@ -112,6 +113,7 @@ export default function PDF() {
               style={styles.input}
               value={phone}
               onChangeText={(text) => setPhone(text)}
+              editable={false}
             />
           </View>
         </View>
@@ -123,6 +125,7 @@ export default function PDF() {
               style={styles.input}
               value={email}
               onChangeText={(text) => setEmail(text)}
+              editable={false}
             />
           </View>
 
@@ -149,6 +152,7 @@ export default function PDF() {
               style={styles.input}
               value={cpf}
               onChangeText={(text) => setCpf(text)}
+              editable={false}
             />
           </View>
 
@@ -158,6 +162,7 @@ export default function PDF() {
               style={styles.input}
               value={birth}
               onChangeText={(text) => setBirth(text)}
+              editable={false}
             />
           </View>
         </View>
@@ -169,6 +174,7 @@ export default function PDF() {
               style={styles.input}
               value={road}
               onChangeText={(text) => setRoad(text)}
+              editable={false}
             />
           </View>
 
@@ -178,6 +184,7 @@ export default function PDF() {
               style={styles.input}
               value={neighborhood}
               onChangeText={(text) => setNeighborhood(text)}
+              editable={false}
             />
           </View>
         </View>
@@ -189,6 +196,7 @@ export default function PDF() {
               style={styles.input}
               value={city}
               onChangeText={(text) => setCity(text)}
+              editable={false}
             />
           </View>
 
@@ -199,6 +207,7 @@ export default function PDF() {
               value={area}
               keyboardType="numeric"
               onChangeText={(number) => Number(setArea(number))}
+              editable={false}
             />
           </View>
         </View>
@@ -210,6 +219,7 @@ export default function PDF() {
               style={styles.input}
               value={cultivation}
               onChangeText={(text) => setCultivation(text)}
+              editable={false}
             />
           </View>
 
@@ -219,6 +229,7 @@ export default function PDF() {
               style={styles.input}
               value={problem}
               onChangeText={(text) => setProblem(text)}
+              editable={false}
             />
           </View>
         </View>
@@ -242,6 +253,7 @@ export default function PDF() {
               style={styles.input}
               value={goal}
               onChangeText={(text) => setGoal(text)}
+              editable={false}
             />
           </View>
         </View>
@@ -253,6 +265,7 @@ export default function PDF() {
               style={styles.input}
               value={diagnosis}
               onChangeText={(text) => setDiagnosis(text)}
+              editable={false}
             />
           </View>
 
@@ -262,6 +275,7 @@ export default function PDF() {
               style={styles.input}
               value={pest}
               onChangeText={(text) => setPest(text)}
+              editable={false}
             />
           </View>
         </View>
@@ -273,6 +287,7 @@ export default function PDF() {
               style={styles.input}
               value={product}
               onChangeText={(text) => setProduct(text)}
+              editable={false}
             />
           </View>
 
@@ -282,6 +297,7 @@ export default function PDF() {
               style={styles.input}
               value={observations}
               onChangeText={(text) => setObservations(text)}
+              editable={false}
             />
           </View>
         </View>
@@ -293,6 +309,7 @@ export default function PDF() {
               style={styles.input}
               value={planting}
               onChangeText={(text) => setPlanting(text)}
+              editable={false}
             />
           </View>
 
@@ -302,6 +319,7 @@ export default function PDF() {
               style={styles.input}
               value={status}
               onChangeText={(text) => setStatus(text)}
+              editable={false}
             />
           </View>
         </View>
@@ -313,6 +331,7 @@ export default function PDF() {
               style={styles.input}
               value={date}
               onChangeText={(text) => setDate(text)}
+              editable={false}
             />
           </View>
 
@@ -322,6 +341,7 @@ export default function PDF() {
               style={styles.input}
               value={arrival}
               onChangeText={(text) => setArrival(text)}
+              editable={false}
             />
           </View>
         </View>
@@ -333,6 +353,7 @@ export default function PDF() {
               style={styles.input}
               value={exit}
               onChangeText={(text) => setExit(text)}
+              editable={false}
             />
           </View>
         </View>

@@ -22,6 +22,15 @@ const styles = StyleSheet.create({
 		marginTop: 0,
 	},
 
+	input2: {
+		fontSize: 16,
+		margin: 20,
+		padding: 13,
+		backgroundColor: "#fff",
+		borderRadius: 30,
+		marginTop: 50,
+	  },
+
 	flexButtons: {
 		flexDirection: "row",
 		flexWrap: "wrap",

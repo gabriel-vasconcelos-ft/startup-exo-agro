@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
 
   listContainer: {
     alignItems: "center",
+    marginBottom: 30,
   },
 });
 
