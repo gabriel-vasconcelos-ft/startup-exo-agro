@@ -9,6 +9,8 @@ import PoliticaPrivacidade from "./PoliticaPrivacidade";
 import Sobre from "./Sobre";
 import FinalizarVisita from "./FinalizarVisita";
 import MinhaAgenda from './MinhaAgenda';
+import Relatorios from "./Relatorios";
+import PDF from "./PDF";
 
 
 export {
@@ -22,5 +24,7 @@ export {
   PoliticaPrivacidade,
   Sobre,
   FinalizarVisita,
-  MinhaAgenda
+  MinhaAgenda,
+  Relatorios,
+  PDF
 };

@@ -34,7 +34,7 @@ export default function Header() {
 				<Image
 					style={[styles.image, { width: imageSize, height: imageSize }]}
 					source={{
-						uri: "https://media.licdn.com/dms/image/D4D03AQFASt0CtubB_g/profile-displayphoto-shrink_800_800/0/1691850636025?e=1703116800&v=beta&t=LIJ50XYaRDExgmSsgGXExaN3u_lKa8OClPDP4KWbgAs",
+						uri: "https://i.pinimg.com/736x/3e/aa/24/3eaa245d923949b6f662b8ba07b7a3b2.jpg",
 					}}
 				/>
 			</View>

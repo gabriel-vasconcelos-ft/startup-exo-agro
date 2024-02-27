@@ -21,12 +21,28 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: "bold",
     marginTop: 25,
+    marginBottom: 5,
     color: "#696969",
   },
 
   listContainer: {
     alignItems: "center",
-    marginBottom: 30,
+  },
+
+  buttonAdd:{
+      backgroundColor: "#5FBF3E",
+      borderRadius: 8,
+      width: 40,
+      height: 40,
+      justifyContent: "center",
+      alignItems: "center",
+      marginTop: 10,
+      marginLeft: "75%",
+  },
+
+  buttonIcon: {
+    fontSize: 27,
+    color: "#fff",
   },
 });
 

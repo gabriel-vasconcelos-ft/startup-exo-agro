@@ -22,6 +22,15 @@ const styles = StyleSheet.create({
 		marginTop: 0,
 	},
 
+	input2: {
+		fontSize: 16,
+		margin: 20,
+		padding: 13,
+		backgroundColor: "#fff",
+		borderRadius: 30,
+		marginTop: 50,
+	  },
+
 	flexButtons: {
 		flexDirection: "row",
 		flexWrap: "wrap",
@@ -29,7 +38,7 @@ const styles = StyleSheet.create({
 		marginLeft: 20,
 		marginRight: 20,
 		marginTop: 70,
-		marginBottom: 95,
+		marginBottom: 50,
 	},
 
 	button: {
@@ -97,6 +106,13 @@ const styles = StyleSheet.create({
 		marginTop: 20,
 		textAlign: "center",
 	},
+
+	label: {
+		fontSize: 15,
+		marginBottom: 5,
+		marginLeft: 20,
+		color: "#646464",
+	  },
 });
 
 export default styles;

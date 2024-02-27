@@ -8,6 +8,7 @@ import {
 	TouchableOpacity,
 } from "react-native";
 
+
 import { useNavigation } from "@react-navigation/native";
 import RNPickerSelect from "react-native-picker-select";
 
@@ -41,7 +42,7 @@ export default function AgendarVisita() {
 
 			// Dados mocados
 			formData.append("client_id", clientId);
-			formData.append("agronomist_id", "35381183-2f07-4b47-b6d1-92ccd74ed864");
+			formData.append("agronomist_id", "4d532d00-fe87-4112-8c02-4aec3d873038");
 			formData.append("status", "pending");
 			formData.append("arrival", arrival);
 			formData.append("exit", exit);
@@ -49,7 +50,7 @@ export default function AgendarVisita() {
 			formData.append("date", date);
 
 			const response = await axios.post(
-				"http://10.0.0.106:8080/visit",
+				"http://20.20.17.141:8080/visit",
 				formData,
 				{
 					headers: {
@@ -80,7 +81,7 @@ export default function AgendarVisita() {
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
-				const response = await axios.get("http://10.0.0.106:8080/client");
+				const response = await axios.get("http://20.20.17.141:8080/client");
 				console.log("Response received:", response);
 				if (response && response.data) {
 					setClients(response.data);

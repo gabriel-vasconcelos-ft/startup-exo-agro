@@ -32,7 +32,7 @@ export default function TabBar() {
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.navbarButton}
-          onPress={() => navigateToScreen("ListaCliente", "linechart")}
+          onPress={() => navigateToScreen("PDF", "linechart")}
         >
           <AntDesign
             name="linechart"

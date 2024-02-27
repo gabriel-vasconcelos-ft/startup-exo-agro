@@ -55,7 +55,7 @@ export default function CadastroCliente() {
 			formData.append("notification", notification);
 
 			const response = await axios.post(
-				"http://10.0.0.106:8080/client",
+				"http://20.20.17.141:8080/client",
 				formData,
 				{
 					headers: {
