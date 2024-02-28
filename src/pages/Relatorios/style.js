@@ -27,17 +27,18 @@ const styles = StyleSheet.create({
 
   listContainer: {
     alignItems: "center",
+    marginBottom: 30,
   },
 
-  buttonAdd:{
-      backgroundColor: "#5FBF3E",
-      borderRadius: 8,
-      width: 40,
-      height: 40,
-      justifyContent: "center",
-      alignItems: "center",
-      marginTop: 10,
-      marginLeft: "75%",
+  buttonAdd: {
+    backgroundColor: "#5FBF3E",
+    borderRadius: 8,
+    width: 40,
+    height: 40,
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 10,
+    marginLeft: "75%",
   },
 
   buttonIcon: {

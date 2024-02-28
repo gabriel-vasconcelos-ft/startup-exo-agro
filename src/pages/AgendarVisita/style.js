@@ -72,6 +72,7 @@ const styles = StyleSheet.create({
 		justifyContent: "center",
 		marginTop: 20,
 		textAlign: "center",
+		borderRadius: 8,
 	},
 
 	boxMessageSuccess: {
@@ -84,6 +85,7 @@ const styles = StyleSheet.create({
 		justifyContent: "center",
 		marginTop: 20,
 		textAlign: "center",
+		borderRadius: 8,
 	},
 
 	label: {

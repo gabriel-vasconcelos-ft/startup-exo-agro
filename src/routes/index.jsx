@@ -24,19 +24,19 @@ import { TabBar } from "../components";
 export default function Routes() {
   const Stack = createStackNavigator();
 
-	return (
-		<NavigationContainer>
-			<Stack.Navigator
-				initialRouteName="Login"
-				screenOptions={{
-					headerShown: false,
-				}}
-			>
-				<Stack.Screen name="Login" component={Login} />
-				<Stack.Screen name="Home" component={Home} />
-				<Stack.Screen name="ListaCliente" component={ListaCliente} />
-				<Stack.Screen name="Perfil" component={Perfil} />
-
+  return (
+    <NavigationContainer>
+      <Stack.Navigator
+        initialRouteName="Home"
+        screenOptions={{
+          headerShown: false,
+        }}
+      >
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="ListaCliente" component={ListaCliente} />
+        <Stack.Screen name="Perfil" component={Perfil} />
+        <Stack.Screen name="TabBar" component={TabBar} />
         <Stack.Screen name="AgendarVisita" component={AgendarVisita} />
         <Stack.Screen name="MinhaAgenda" component={MinhaAgenda} />
         <Stack.Screen name="FinalizarVisita" component={FinalizarVisita} />
@@ -50,8 +50,8 @@ export default function Routes() {
         />
         <Stack.Screen name="Sobre" component={Sobre} />
       </Stack.Navigator>
-      <StatusBar style="auto" />
       <TabBar />
+      <StatusBar style="auto" />
     </NavigationContainer>
   );
 }
