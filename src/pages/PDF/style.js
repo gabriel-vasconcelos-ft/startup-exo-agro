@@ -20,7 +20,6 @@ const styles = StyleSheet.create({
     color: "#fff",
     marginBottom: 4,
     marginTop: 25,
-    // marginLeft: "42%"
   },
 
   image: {
