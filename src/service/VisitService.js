@@ -12,6 +12,18 @@ export const getAllVisits = async () => {
 		};
 	}
 };
+export const getDoneVisits = async () => {
+	try {
+		const response = await api.get("/visit/done");
+		return response.data;
+	} catch (error) {
+		console.error(error.message);
+		return {
+			code: 500,
+			message: "Erro ao buscar visitas",
+		};
+	}
+};
 
 export const getVisitById = async (visitId) => {
 	try {
