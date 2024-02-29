@@ -6,8 +6,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#f5f5f5",
     width: "100%",
     height: "100%",
-    //alignItems: "center",
-    //justifyContent: "center",
   },
 
   header: {
@@ -18,6 +16,7 @@ const styles = StyleSheet.create({
       "linear-gradient(184deg, rgba(95,191,62,1) 0%, rgba(151,210,131,1) 100%)",
     width: "100%",
     maxHeight: "50%",
+    minHeight: 235,
     borderBottomLeftRadius: 30,
     borderBottomRightRadius: 30,
     justifyContent: "center",
@@ -70,6 +69,31 @@ const styles = StyleSheet.create({
   buttonText: {
     color: "#fff",
     fontWeight: "bold",
+  },
+
+  boxMessageErro: {
+    padding: 20,
+    marginLeft: 20,
+    marginRight: 20,
+    color: "#fff",
+    backgroundColor: "#dc3545",
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 20,
+    textAlign: "center",
+    borderRadius: 8,
+  },
+
+  boxMessageSuccess: {
+    padding: 20,
+    marginLeft: 20,
+    marginRight: 20,
+    color: "#fff",
+    backgroundColor: "#39d353",
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 20,
+    textAlign: "center",
   },
 });
 
