@@ -1,6 +1,6 @@
 import { useNavigation } from "@react-navigation/core";
 import { useState, useEffect } from "react";
-import axios from "axios";
+
 import {
   Text,
   View,
@@ -9,6 +9,8 @@ import {
   TouchableOpacity,
   Keyboard,
 } from "react-native";
+
+import {login} from '../../service/loginService';
 
 import styles from "./style";
 
@@ -30,7 +32,7 @@ export default function Login() {
       data.email = email;
       data.password = password;
 
-      const response = await axios.post("http://20.20.17.141:8080/login", data);
+      const response = await login(data);
 
       if (response.status === 200 || response.status === 201) {
         setSuccessMessage("Cliente cadastrado com sucesso");
